@@ -23,9 +23,7 @@ Commercial Application: Integration into a mobile app or website offering coffee
 ### Folder Structure
 
 coffee_cup_reader/
-
 ├── app/
-
 │   ├── __init__.py              # Marks directory as a package
 
 │   ├── main.py                  # FastAPI application entry point
@@ -88,15 +86,15 @@ pip install -r requirements.txt
 Create a .env file in the root directory with your OpenAI API key:
 OPENAI_API_KEY=your_openai_api_key_here
 
-USE_SERVER_STORAGE = "True" or "False" based on the requirement. 
+  USE_SERVER_STORAGE = "True" or "False" based on the requirement. 
 
 5. Run the Application
 
-uvicorn app.main:app --reload
+    uvicorn app.main:app --reload
 
-Access the API at http://127.0.0.1:8000.
+    Access the API at http://127.0.0.1:8000.
 
-Use the Swagger UI at http://127.0.0.1:8000/docs for interactive testing.
+    Use the Swagger UI at http://127.0.0.1:8000/docs for interactive testing.
 
 
 ### Endpoints
