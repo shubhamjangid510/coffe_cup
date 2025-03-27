@@ -88,11 +88,15 @@ cd coffee_cup_reader
 
 2. Create a Virtual Environment
 
+With these commands
+
     python -m venv venv
 
     source venv/bin/activate  # On Windows: venv\Scripts\activate
 
 3. Install Dependencies
+
+Run this command
     
     pip install -r requirements.txt
 
@@ -105,6 +109,8 @@ Create a .env file in the root directory with your OpenAI API key:
     USE_SERVER_STORAGE = "True" or "False" based on the requirement. 
 
 5. Run the Application
+
+With this command
 
     uvicorn app.main:app --reload
 
