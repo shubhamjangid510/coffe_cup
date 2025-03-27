@@ -7,8 +7,11 @@ The Coffee Cup Reader API is a FastAPI-based application that analyzes images of
 ### Key Features
 
 Image Processing: Trims coffee cup images using an ellipse and triangle mask.
+
 Symbol Detection: Identifies overall shapes and tiny symbols using OpenAI's GPT-4o vision model.
+
 Reading Generation: Aggregates results and generates a cohesive coffee cup reading using GPT-4o.
+
 API-Driven: Provides a RESTful endpoint for easy integration.
 
 ### Use Cases
@@ -25,37 +28,37 @@ Commercial Application: Integration into a mobile app or website offering coffee
 coffee_cup_reader/
 
 ├── app/
-|
+
 │   ├── __init__.py              # Marks directory as a package
-|   |
+
 │   ├── main.py                  # FastAPI application entry point
-|   |
+
 │   ├── core/
-|   |   |
+
 │   │   ├── __init__.py
-|   |   |
+
 │   │   ├── config.py            # Configuration and environment variables
-|   |   |
+
 │   │   ├── image_processor.py   # Image trimming logic
-|   |   |
+
 │   │   └── symbol_analyzer.py   # Symbol detection logic
-|   |   
+
 │   ├── models/
-|   |   |
+
 │   │   ├── __init__.py
-|   |   |
+
 │   │   └── schemas.py           # Pydantic models for request/response
-|   |
+
 │   └── utils/
-|       |
+
 │       ├── __init__.py
-|       |
+
 │       └── helpers.py           # Helper functions (e.g., base64 encoding)
-|
+
 ├── .env                         # Environment variables (e.g., OPENAI_API_KEY)
-|
+
 ├── requirements.txt             # Python dependencies
-|
+
 └── README.md                    # Project documentation (this file)
 
 
@@ -64,12 +67,18 @@ coffee_cup_reader/
 
 
 OpenAI API Key: Required for GPT-4o (image analysis) and GPT-4o (reading generation).
+
 Execution Environment with Storage: A system (local machine or server) to:
+
 Run Python 3.9+ and required libraries.
+
 Store input images and output files (e.g., local filesystem or server disk).
+
 Additional Recommendations
-Internet Connection: For OpenAI API calls.
-Sample Images: Coffee cup images (.jpeg, .jpg, or .png) for testing.
+
+    Internet Connection: For OpenAI API calls.
+
+    Sample Images: Coffee cup images (.jpeg, .jpg, or .png) for testing.
 
 ### Setup Instructions
 
@@ -78,7 +87,6 @@ git clone [<repository-url>](https://github.com/shubhamjangid510/coffe_cup.git)
 cd coffee_cup_reader
 
 2. Create a Virtual Environment
-    
     python -m venv venv
     source venv/bin/activate  # On Windows: venv\Scripts\activate
 
