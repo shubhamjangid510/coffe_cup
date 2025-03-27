@@ -1,47 +1,67 @@
 # Coffee Cup Reader API
 
-Overview
+### Overview
 
 The Coffee Cup Reader API is a FastAPI-based application that analyzes images of coffee cup traces to detect shapes and symbols, providing interpretations rooted in coffee cup reading culture. It leverages OpenCV for image processing, OpenAI's GPT-4o for symbol detection, and GPT-4 for generating meaningful readings. Users can upload one or more coffee cup images, and the API returns structured JSON results with detected symbols and a final narrative interpretation.
 
-Key Features
+### Key Features
 
 Image Processing: Trims coffee cup images using an ellipse and triangle mask.
 Symbol Detection: Identifies overall shapes and tiny symbols using OpenAI's GPT-4o vision model.
 Reading Generation: Aggregates results and generates a cohesive coffee cup reading using GPT-4o.
 API-Driven: Provides a RESTful endpoint for easy integration.
 
-Use Cases
+### Use Cases
+
 Personal Use: Individuals interested in coffee cup reading can upload images to receive automated interpretations.
+
 Cultural Exploration: Researchers or enthusiasts studying coffee cup reading traditions can analyze patterns programmatically.
+
 Commercial Application: Integration into a mobile app or website offering coffee cup reading as a novelty service.
 
 
-Folder Structure
+### Folder Structure
 
 coffee_cup_reader/
+
 ├── app/
+
 │   ├── __init__.py              # Marks directory as a package
+
 │   ├── main.py                  # FastAPI application entry point
+
 │   ├── core/
+
 │   │   ├── __init__.py
+
 │   │   ├── config.py            # Configuration and environment variables
+
 │   │   ├── image_processor.py   # Image trimming logic
+
 │   │   └── symbol_analyzer.py   # Symbol detection logic
+
 │   ├── models/
+
 │   │   ├── __init__.py
+
 │   │   └── schemas.py           # Pydantic models for request/response
+
 │   └── utils/
+
 │       ├── __init__.py
+
 │       └── helpers.py           # Helper functions (e.g., base64 encoding)
+
 ├── .env                         # Environment variables (e.g., OPENAI_API_KEY)
+
 ├── requirements.txt             # Python dependencies
+
 └── README.md                    # Project documentation (this file)
 
 
-Prerequisites
 
-Minimum Resource Requirements
+### Prerequisites
+
 
 OpenAI API Key: Required for GPT-4o (image analysis) and GPT-4o (reading generation).
 Execution Environment with Storage: A system (local machine or server) to:
@@ -51,7 +71,7 @@ Additional Recommendations
 Internet Connection: For OpenAI API calls.
 Sample Images: Coffee cup images (.jpeg, .jpg, or .png) for testing.
 
-Setup Instructions
+### Setup Instructions
 
 1. Clone the Repository
 git clone [<repository-url>](https://github.com/shubhamjangid510/coffe_cup.git)
@@ -67,14 +87,17 @@ pip install -r requirements.txt
 4. Configure Environment Variables
 Create a .env file in the root directory with your OpenAI API key:
 OPENAI_API_KEY=your_openai_api_key_here
+
 USE_SERVER_STORAGE = "True" or "False" based on the requirement. 
 
 5. Run the Application
+
 uvicorn app.main:app --reload
+
 Access the API at http://127.0.0.1:8000.
+
 Use the Swagger UI at http://127.0.0.1:8000/docs for interactive testing.
 
-API Usage
 
 ### Endpoints
 
@@ -98,7 +121,7 @@ Maximum file size: 15MB
 
 Allowed positions: left, right, up, down, top
 
-Response:
+Example Response:
 {
   "reading_id": "123456",
   "file_path": "s3://my-bucket/123456/image_left.png",
