@@ -23,37 +23,39 @@ Commercial Application: Integration into a mobile app or website offering coffee
 ### Folder Structure
 
 coffee_cup_reader/
+
 ├── app/
+|
 │   ├── __init__.py              # Marks directory as a package
-
+|   |
 │   ├── main.py                  # FastAPI application entry point
-
+|   |
 │   ├── core/
-
+|   |   |
 │   │   ├── __init__.py
-
+|   |   |
 │   │   ├── config.py            # Configuration and environment variables
-
+|   |   |
 │   │   ├── image_processor.py   # Image trimming logic
-
+|   |   |
 │   │   └── symbol_analyzer.py   # Symbol detection logic
-
+|   |   
 │   ├── models/
-
+|   |   |
 │   │   ├── __init__.py
-
+|   |   |
 │   │   └── schemas.py           # Pydantic models for request/response
-
+|   |
 │   └── utils/
-
+|       |
 │       ├── __init__.py
-
+|       |
 │       └── helpers.py           # Helper functions (e.g., base64 encoding)
-
+|
 ├── .env                         # Environment variables (e.g., OPENAI_API_KEY)
-
+|
 ├── requirements.txt             # Python dependencies
-
+|
 └── README.md                    # Project documentation (this file)
 
 
@@ -76,8 +78,9 @@ git clone [<repository-url>](https://github.com/shubhamjangid510/coffe_cup.git)
 cd coffee_cup_reader
 
 2. Create a Virtual Environment
-python -m venv venv
-source venv/bin/activate  # On Windows: venv\Scripts\activate
+    
+    python -m venv venv
+    source venv/bin/activate  # On Windows: venv\Scripts\activate
 
 3. Install Dependencies
 pip install -r requirements.txt
@@ -86,7 +89,7 @@ pip install -r requirements.txt
 Create a .env file in the root directory with your OpenAI API key:
 OPENAI_API_KEY=your_openai_api_key_here
 
-  USE_SERVER_STORAGE = "True" or "False" based on the requirement. 
+    USE_SERVER_STORAGE = "True" or "False" based on the requirement. 
 
 5. Run the Application
 
