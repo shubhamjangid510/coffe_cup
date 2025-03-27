@@ -87,15 +87,20 @@ git clone [<repository-url>](https://github.com/shubhamjangid510/coffe_cup.git)
 cd coffee_cup_reader
 
 2. Create a Virtual Environment
+
     python -m venv venv
+
     source venv/bin/activate  # On Windows: venv\Scripts\activate
 
 3. Install Dependencies
-pip install -r requirements.txt
+    
+    pip install -r requirements.txt
 
 4. Configure Environment Variables
+
 Create a .env file in the root directory with your OpenAI API key:
-OPENAI_API_KEY=your_openai_api_key_here
+
+    OPENAI_API_KEY=your_openai_api_key_here
 
     USE_SERVER_STORAGE = "True" or "False" based on the requirement. 
 
