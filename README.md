@@ -168,4 +168,44 @@ b. reading_id - string - Required - Unique identifier for the coffee cup reading
 
 Example Response
 
-it
+    {
+      "readings": [
+        {
+          "Observation": "Tree",
+          "Location": "top",
+          "Strength": 7,
+          "Meaning": "growth",
+          "Image": "image_down.png"
+        },
+        {
+          "Observation": "Tree",
+          "Location": "bottom-left",
+          "Strength": 7,
+          "Meaning": "growth",
+          "Image": "image_left.png"
+        },
+        {
+          "Observation": "Mountain",
+          "Location": "bottom-center",
+          "Strength": 7,
+          "Meaning": "obstacle",
+          "Image": "image_right.png"
+        },
+        {
+          "Observation": "Mountain",
+          "Location": "bottom-center",
+          "Strength": 9,
+          "Meaning": "obstacles and challenges that offer growth",
+          "Image": "image_top.png"
+        },
+        {gi
+          "Observation": "mountain",
+          "Location": "bottom-center",
+          "Strength": 8,
+          "Meaning": "obstacles and challenges, but also the potential for growth and achievement",
+          "Image": "image_up.png"
+        },
+      
+      ],
+      "final_reading": "In the tapestry of your life, you find yourself at a junction where growth, challenges, and freedom intertwine to shape your path. As I peer into your cup, the symbols etched in its depths paint a vivid narrative of your past, present, and future.\n\nIn the recent past, the Tree at the bottom-left and the River flowing nearby suggest that you have been in a period of substantial personal growth and transformation. The strength of this tree, rooted and yet reaching upwards, indicates you've laid a solid foundation in your life. However, like a river that carves its path through the landscape, your journey has been one of movement and fluidity, reminding you that the journey itself is as significant as the destination.\n\nAt present, you stand at the center of a confluence of powerful energies. The Wave at the center hints that change is a constant presence in your life, urging you to adapt and to surf the tides of transformation with grace. Yet, alongside the wave, the imposing Mountain, strong and immovable, speaks to the formidable challenges you currently face. This mountain challenges you, yet its presence also offers a promise: any obstacle you overcome will lead to significant personal growth.\n\nAbove and beyond the mountain, a Bird soars at the top-center, bringing with it an air of freedom. This symbol encourages you to look beyond the immediate challenges, to find liberation in new perspectives, and be ready for incoming news that could alter your course. The bird's call harmonizes with the presence of another Tree at the top, affirming that growth and liberation can and will coexist in your journey.\n\nAs you peer into the future, you are met with a complex and yet promising landscape. Mountains appear once more at the bottom-center, their strength heightened, signifying enduring obstacles. However, these barriers are not to be feared; they are the very crucible of your potential success. Overcoming these trials will yield remarkable personal growth, akin to peaks that hold breathtaking vistas for those who dare to climb.\n\nIn tandem, a Crescent Moon glows in the upper-center, softly illuminating change and transitions. Its gentle light suggests that these upcoming shifts will not be abrupt but rather subtle and gradual, gently guiding you towards new horizons. A Bird, again, in this realm of the future, suggests that with these changes, you'll gain even greater freedom, carrying you into new perspectives and opportunities.\n\nEarth, air, water, and spirit—these elements weave the story of your life as it spreads before you. Held within these symbols is the promise of growth through challenge, freedom beyond confinement, and the continuous motion of your life's journey. Embrace the path ahead, for it holds the keys to your becoming."
+    }
