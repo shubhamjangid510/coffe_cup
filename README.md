@@ -1,4 +1,4 @@
-### Coffee Cup Reader API
+# Coffee Cup Reader API
 
 Overview
 
@@ -54,7 +54,7 @@ Sample Images: Coffee cup images (.jpeg, .jpg, or .png) for testing.
 Setup Instructions
 
 1. Clone the Repository
-git clone <repository-url>
+git clone [<repository-url>](https://github.com/shubhamjangid510/coffe_cup.git)
 cd coffee_cup_reader
 
 2. Create a Virtual Environment
@@ -76,9 +76,9 @@ Use the Swagger UI at http://127.0.0.1:8000/docs for interactive testing.
 
 API Usage
 
-Endpoints
+### Endpoints
 
-# A. Upload Image
+### A. Upload Image
 
 Uploads a coffee cup image for a specific reading ID and position.
 
@@ -106,7 +106,7 @@ Response:
   "message": "Image at position left uploaded successfully"
 }
 
-# B. Analyze Coffee Cup
+### B. Analyze Coffee Cup
 
 Analyzes five coffee cup images for a given reading_id and generates a final reading.
 
